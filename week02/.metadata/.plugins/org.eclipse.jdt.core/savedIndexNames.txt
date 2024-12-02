@@ -1,0 +1,2 @@
+INDEX VERSION 1.134+D:\web_0900_mjh\homework\week02\.metadata\.plugins\org.eclipse.jdt.core
+2779160138.index

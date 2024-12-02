@@ -330,11 +330,295 @@ public class MentorJavaHomework {
 //		System.out.println(num1 + num2); // num2가 자동형변환 되어 출력
 		
 //예제 3-11
-		int result = 1000000 *100000;
-		System.out.println(result);
+//		int result = 1000000 *100000; //정수형 값에 1000000*1000000값 대입
+//		System.out.println(result);//int의 범위를 벗어나기 때문에 오류 출력
+		
+//예제 3-12
+//		int x =10; 
+//		int y = 1; //정수형 변수 x,y에 각각 10,1 대입
+//		y+=x; //y의 값에 x값 더함 1+10 =11
+//		System.out.println(y); //11출력
+//		y*=x; //y의 값에 x값 곱함 11x10 =110
+//		System.out.println(y); //110 출력
+//		y%=x; //y의 값을 x의 값으로 나누고 나머지 110%10=0
+//		System.out.println(y); //0출력
+
+//예제 3-13
+//		int a =10;
+//		int b = 20;
+//		System.out.println(a>b); // a가 b보다 큰가에 대한 값 출력 : false
+//		System.out.println(a<=b); //a가 b보다 작거나 같은가에 대한 값 출력 : true
+//		System.out.println(a==b); // a와 b가 같은가에 대한 값 출력 : false
+//		System.out.println(a!=b); // a와b가 다른가에대한 값 출력 : true
+		
+//예제 3-14
+//		int a =10;
+//		int b = 11;
+//		System.out.println(a<=b); // a가 b보다 작거나 같은가에대한 값 출력 :true
+//		System.out.println(a==b); // a와 b가 같은가에대한 값 출력 : false
+//		System.out.println(a!=--b); // b-1의 값과 a의 값이 다른가 : false
+		
+//예제 3-15
+//		boolean b1 =true;
+//		boolean b2 =false;
+//		boolean b3 =true;
+//		boolean b4 =false;
+//		
+//		System.out.println("#####논리곱#####"); //둘다 같아야 값 출력 아니라면 flase출력
+//		System.out.println(b1 && b2); // 하나만 true이기때문에 flase
+//		System.out.println(b1 && b3); // 두항이 모두 true라서 true
+//		System.out.println(b2 && b4); // 두항이 모두 false라서 false
+//		System.out.println();
+//		System.out.println("#####논리합#####"); // 하나라도 true이면 true
+//		System.out.println(b1 || b2); //b1이 true라서 true
+//		System.out.println(b1 || b3); // 두항이 모두 true라서 true
+//		System.out.println(b2 || b4); // 두항이 모두 false라서 false
+//		System.out.println();
+//		System.out.println("#####베타적 논리합#####");//다르면true 같으면 false
+//		System.out.println(b1 ^ b2); //두항이 다르기때문에 true
+//		System.out.println(b1 ^ b3); // 두항이 같기때문에 false
+		
+//예제 3-16
+//		int num =(7>1) ? 1 : 2; // 조건식이 true이면 1출력 false라면 2출력
+//		System.out.println(num); //true이기때문에 1출력
+		
+//예제 3-17
+//		int num = 0; // 정수형 변수 num생성
+//		if(7>1) { //7이 1보다 크다면
+//			num=1; //num의 값은 1
+//		}else { //그렇지 않다면 
+//			num=2;//num의 값은 2
+//		}
+//		System.out.println(num); // 조건식이 true이기때문에 num의값은 1
+		
+//예제 4-1
+//		int result = 0; //정수형 변수 result생성
+//		if(3>2) { //3이 2보다 크다면
+//			result = 3; // result의 값은 3
+//		}
+//		System.out.println(result); //조건식이 true이기때문에 3출력
+		
+// 예제 4-2
+//		System.out.println("나이를 입력하세요"); //나이 입력문 작성
+//		int age  =sc.nextInt(); // 입력한 정수를 age변수에 저장
+//		if(age > 19) { // 입력한 정수가 19를 넘는다면 
+//			System.out.println("성인입니다");// 성인입니다 출력
+//		}
+//		System.out.println("프로그램을 종료합니다"); // 그렇지 않다면 프로그램을 종료합니다 출력
+		
+//예제 4-3
+//		int num =5;//정수형 변수 num에 5 대입
+//		if(num > 4) { //num의 값이 4보다 크다면 
+//			System.out.println(num + "은 4보다 큽니다"); //출력
+//		}else {//아니라면
+//			System.out.println(num + "은 4보다 작습니다"); //출력
+//		}
+			
+//예제 4-4
+//		int a=4;
+//		int b=10; // 정수형 변수 두가지에 각각 4,10 값 대입
+//		if(a>b) { // a가 b보다 크다면
+//			System.out.println("a가 b보다 큽니다"); // 출력
+//		}else {//아니라면
+//			System.out.println("a가 b보다 작거나 같습니다"); //출력
+//		}
+		
+//예제 4-5
+//		int a = 4;
+//		int b = 10;
+//		int max = 0;//정수형 변수 세가지에 각각 4, 10, 기본값 대입
+//		if(a>b) { //a가 b보다 크다면
+//			max =a; //max의 값은 a로 저장
+//			
+//		}else { // 그게 아니라면
+//			max = b; //max의 값은 b로 저장
+//		}
+//	
+//		System.out.println(a + "와" + b +"중의 큰수는" + max + "입니다");
 		
 		
+//예제 4-6
+//		System.out.println("나이를 입력하세요"); //나이입력문 작성
+//		int age = sc.nextInt(); //입력받을 값을 정수형 변수 age에 저장
+//		if(age > 19) { //입력받은값이 19가 넘는다면
+//			System.out.println("성인입니다"); //출력
+//		}else { 
+//			System.out.println("미성년자입니다");//아니라면 출력
+//		}
 		
+//예제 4-7
+//		int favorite = 7; // 정수형 변수에 7값 대입
+//		if(favorite < 5) { 
+//			System.out.println("좋아하는 숫자가 5보다 작습니다");// 변수의 값이 5보다 작다면 출력이지만 크다
+//		}else if (favorite > 5) { 
+//			System.out.println("좋아하는 숫자는 5보다 큽니다");// 변수의 값이 5보다 크기때문에 해당 출력문 사용
+//		}else { // 위의 조건문이 true이기 때문에 건너뛴다
+//			System.out.println("좋아하는 숫자가 5입니다.");
+//		}
+//		
+
+//예제 4-8
+//		int favorite = 7; // 정수형 변수에 7값 대입
+//		if(favorite > 5) { 
+//			System.out.println("좋아하는 숫자가 5보다 큽니다");// 변수의 값이 5보다 크기때문에 해당 출력문 사용
+//		}else if (favorite == 7) { 
+//			System.out.println("좋아하는 숫자는 7입니다");// 변수의 값이 7이지만 위에조건문에서 먼저 true가 나왔기때문에 사용x
+		
+// 예제 4-9
+//		System.out.println("나이를 입력하세요"); //나이 입력문 작성
+//		int age = sc.nextInt(); // 입력한 정수를 age변수값에 저장
+//		if(age > 19) { //입력한 정수가 19를 넘는다면 출력
+//			System.out.println("성인입니다");
+//		}else if(age >13) {//입력한 정수가 13을 넘는다면 출력
+//			System.out.println("청소년입니다");
+//		}else {//그외의 값 출력
+//			System.out.println("유아입니다");
+//		}
+			
+//예제 4-10
+//		int num = 7; //정수형 변수에 7대입
+//		
+//		switch(num) { 
+//		case 1 : //num의 값이 1과 같을때
+//			System.out.println("num은 1입니다");
+//			break; // 조건이 충족했을때 멈추게 하는기능
+//		case 2: //num의 값이 7과 같을때
+//			System.out.println("num은 7입니다");
+//			break;
+//		default : //그외의 값일때
+//			System.out.println("num은 1도 7도 아닙니다");
+//		break;
+//			
+//		}
+		
+//예제 4-11
+//		int num = 7; //정수형 변수에 7대입
+//		
+//		switch(num) { 
+//		case 1 : //num의 값이 1과 같을때
+//			System.out.println("num은 1입니다");
+//			
+//		case 2: //num의 값이 7과 같을때
+//			System.out.println("num은 7입니다");
+//			
+//		default : //그외의 값일때
+//			System.out.println("num은 1도 7도 아닙니다");
+//		
+//			//break;가 없기때문에 조건을 충족한 뒤 모든 출력문 출력
+//		}
+		
+// 예제 4-12	
+//		System.out.println("원하는 숫자를 입력하세요 (1~5)");
+//		int num = sc.nextInt();
+//		switch(num) {
+//		case 5 : 
+//			System.out.println("5를 입력하셨습니다.");
+//			break;
+//		case 4 : 
+//			System.out.println("4를 입력하셨습니다.");
+//			break;
+//		case 3 : 
+//			System.out.println("3를 입력하셨습니다.");
+//			break;
+//		case 2 : 
+//			System.out.println("2를 입력하셨습니다.");
+//			break;
+//		case 1 : 
+//			System.out.println("1를 입력하셨습니다.");
+//			break;
+//		} // 1부터 5중 입력받아 입력한 숫자에 맞는 case문 출력
+//		
+		
+// 예제 5-1 
+//		int sum = 0;
+//		for(int i =1; i<=10; i++) { 
+//			sum+=i;
+//		}
+//		System.out.println("합 :" + sum);
+		// 정수형 변수 i가 1 부터 10보다 같을때까지 sum의 값에 더하고 +1
+		//즉 sum의 값은 1부터 10까지 더한 값
+		
+//예제 5-2
+//		int sum =0;
+//		for(int i = 1; i <=100; i++) {
+//			if(i%2==0) {
+//				sum+=i;
+//			}
+//		}
+//		System.out.println("합 : "+ sum);
+//	// 정수형 변수 i가 1부터 100까지 1씩 증가 
+//		// 증가하면서 i가 짝수라면 sum의값에 더함
+//		// 즉 sum의 값은 1부터 100까지 짝수의 합
+	
+//예제 5-3
+//		for(int =1; i<=9; i++) { // i가 9와같거나 작다는 조건을 충족하고  
+//			for(int j =1; j <=9; j++) {// j가 9와 같거나 작다는 조건을 충족하면
+//				System.out.println(i + "x" + j "=" +(i*j)+"\t"); // 출력
+//			} //i문장으로 돌아가는 것이 아니라 내부for문으로 돌아가서 j의 값에 +1
+//			//j는 1부터 9까지 올라갔다가 조건이 충족하지 않는 순간 외부for문으로 올라가고 i의 값이 +1되면 j는 다시 1로 초기화된다
+//		System.out.println(); //단별로 줄바꿈
+//		} 
+		
+// 예제 5-4
+//		for(int i = 0; i <7; i++) { //i가 7보다 작다는 조건을 충족하면
+//			for(int j = 0; j<7-i; j++) { //j가 7-i와 같아질때까지 j의 값을 +1하고
+//				System.out.println(" "); //해당 칸에 빈칸을 찍는다 공백이 하나씩 줄어드는 모양
+//			}
+//		}for(int k = 0; k<(2*i) +1; k++) { //0에서 시작한 k가 (2*i) +1와 같아질때까지 +1하고
+//			System.out.println("*"); //*을 찍는다
+//		} //홀수로 늘어나는 모양
+//	System.out.println(); // 줄바꿈
+	
+//예제 5-5
+//		int sum = 0;
+//		int i = 1;
+//		while(i<=10) { //변수i가 10과 같아질때까지 반복
+//			sum += i; // sum에i더함
+//		i++ // i가 1씩 늘어나고 다시 반복
+//		}
+//		System.out.println("합 :" + sum); //sum의 값은1부터 10까지 더한값
+	 
+//예제 5-6
+//		int sum = 0;
+//		int i = 1;
+//		do { // while의 조건이 true이면 실행
+//		sum+=1;
+//		i++
+//		}while(i<=10);
+//	
+//		System.out.println("합" + sum); //sum의 값은 1부터 10까지 더한 값
+		
+//예제 5-7
+//		int sum =0;
+//		for(int =0;i<=100;i++) { //i가 1부터 100과 같아질때까지
+//			if(i%2!=0) {// i의 값이 2로 나누었을때 나머지가 0이 아니라면(홀수)
+//				continue // 아래로 내려가지말고 다음반복 실행
+//			}
+//		sum +=i;// 그렇지 않다면(i의 값이 짝수라면 sum에 i값 더하기)
+//		}
+//		System.out.println("짝수 합 : " + sum); //1부터 100까지 짝수의 합
+	
+//예제 5-8
+//		int magicNumber = (int)(Math.random()*50)+1; // 1~50사이의 무작위 숫자를 변수에 넣기
+//		//스캐너 클래스 import
+//		boolean isMatched = false; // 정답과 실패 변수 생성
+//		for(int i =0; i<10; i++) { //i가 1부터 10이 될때까지 1씩증가
+//			System.out.println("찾는 숫자를 입력 >>"); //입력문 작성
+//			int guess =sc.nextInt();//입력한 숫자를 변수에 저장
+//			if(guess == magicNumber) {//입력한 숫자와 무작위 숫자가 맞았을때 
+//				System.out.println((i+1)+"번째에 맞췄습니다!"); //is는 0부터 시작하기에 i+1설정
+//				isMatched=true;
+//				break; //숫자를 맞추면 더이상의 반복진행이 무의미 하기에 break사용
+//			}else if (guess> magicNumber) { // 입력한 숫자가 더 클때
+//				System.out.println("맞춰야할 숫자가 더 작습니다");
+//			}else if (guess< magicNumber) { //입력한 숫자가 더 작을때
+//				System.out.println("맞춰야할 숫자가 더 큽니다");
+//		}
+//	
+//	}
+//	if(!isMatched) { // i가 10이 됐을때 
+//		System.out.println("정답을 맞추지 못했습니다");
 	}
+	
 
 }
